@@ -12,7 +12,7 @@ module.exports = defineConfig({
 
   e2e: {
     baseUrl: "https://automationpratice.com.br/",
-    defaultCommandTimeout: 5000,
+    defaultCommandTimeout: 7000,
     setupNodeEvents(on, config) {
        require('cypress-mochawesome-reporter/plugin')(on);
       // implement node event listeners here

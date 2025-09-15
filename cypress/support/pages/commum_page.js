@@ -8,6 +8,14 @@ export default{
         cy.get('.fa-lock')
             .click()
     
+    },
+
+    acessarLoginUsuario(){
+       cy.visit('/')
+             .get('.header-logo')
+
+        cy.get('.fa-user') 
+            .click()
     }
 
     
