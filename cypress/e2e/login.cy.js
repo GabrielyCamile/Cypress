@@ -4,7 +4,6 @@ import login_usuario_pages from '../support/pages/login_usuario_pages';
 
 describe('Login', () =>{
 
-    const name = "Gabriely"
     const emailIncorreto = "gabrielycamileemail.com"
     const senha = "123456"
     const senhaincorreta = "12345"
@@ -41,13 +40,11 @@ describe('Login', () =>{
     })
 
     it('lembrar de mim',() =>{
-        
         login_usuario_pages.marcarLembrarDeMim()
         login_usuario_pages.desmarcarLembrarDeMim()
     })
 
     it('login com sucesso',() =>{
-        
         login_usuario_pages.preencheEmail(email)
         login_usuario_pages.preencheSenha(senha)
         login_usuario_pages.clicarBotaoLogin()
