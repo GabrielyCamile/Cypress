@@ -1,7 +1,7 @@
 
 # Automação de Testes em Cypress
 
-O projeto surgiu a partir de uma aula de automação com cypress utilizando algumas ferramentas e padrões 
+O projeto surgiu a partir de uma aula de automação com cypress , com o objetivo de colocar em prática conceitos de testes automatizados utilizando algumas ferramentas e padrões reconhecidos na área. 
 
 
 ## Stack utilizada
@@ -35,7 +35,7 @@ O projeto surgiu a partir de uma aula de automação com cypress utilizando algu
 
 ## Documentação dos testes
 
-[Feature Cadastro](https://github.com/GabrielyCamile/Cypress/blob/master/cypress/README.md)
+[Cenarios de testes](https://github.com/GabrielyCamile/Cypress/blob/master/cypress/README.md)
 
  
 
