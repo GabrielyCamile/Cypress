@@ -26,7 +26,7 @@ describe('Login', () =>{
     })
 
     it('mensagem de erro campo e-mail',() =>{
-        login_usuario_pages.preencheEmail(name)
+        login_usuario_pages.preencheEmail(emailIncorreto)
         login_usuario_pages.clicarBotaoLogin()
         login_usuario_pages.mensagemErroEmail()
 
