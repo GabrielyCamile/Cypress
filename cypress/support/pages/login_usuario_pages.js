@@ -1,5 +1,6 @@
 
 export default{
+
    preencheEmail(email){
         cy.get('#user')
             .type(email)    
@@ -12,15 +13,33 @@ export default{
         cy.get('#btnLogin')
             .click()
     },
-    mensagemErroEmail(mensagem){
+    mensagemErroEmail(){
         cy.get('.invalid_input')
             .should('be.visible')
-            .should('contain', mensagem)
+            .should('have.text', 'E-mail inválido.')
     },
     mensagemErroSenha(senha){
         cy.get('.invalid_input')
             .should('be.visible')
-            .should('contain', senha)
+            .should('have.text','Senha inválida.' )
+    },
+    marcarLembrarDeMim(){
+        cy.get('.form-check-input') .check()
+        
+    },
+    desmarcarLembrarDeMim(){
+        cy.get('.form-check-input') .uncheck()
+    },
+    mensagemDeSucesso(){
+        cy.get('#swal2-title')
+            .should('have.text','Login realizado')
+
+        cy.get('#swal2-html-container')
+            .should('have.text', 'Olá, exemplo@email.com' )
+
+                
+            
+            
     }
 
 

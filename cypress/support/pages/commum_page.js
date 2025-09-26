@@ -11,12 +11,11 @@ export default{
     },
 
     acessarLoginUsuario(){
-       cy.visit('/')
-             .get('.header-logo')
+        cy.visit('/login')
+            .get('.logo').should('be.visible')
 
-        cy.get('.fa-user') 
-            .click()
-    }
+        cy.get('.fa.fa-user')
 
     
+},
 }
