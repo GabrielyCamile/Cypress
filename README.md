@@ -10,7 +10,7 @@ O projeto surgiu a partir de uma aula de automação com cypress , com o objetiv
 - Framework de automação de testes end-to-end.
 - Permite testar aplicações Web de forma rápida e confiável.
 - Integração com CI/CD.
-- 
+  
 **Padrão Page Objects:**
 - Organização do código de automação em classes/arquivos representando páginas ou componentes.
 - Facilita a manutenção e reutilização dos testes.
