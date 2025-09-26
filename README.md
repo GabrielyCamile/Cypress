@@ -30,8 +30,12 @@ O projeto surgiu a partir de uma aula de automação com cypress utilizando algu
 
 ## Site utilizado para as automações
 
- - [QAzando Shop](https://automationpratice.com.br/)
- - <img width="2554" height="915" alt="image" src="https://github.com/user-attachments/assets/afbcae09-30d6-4315-a225-91906854ffc6" />
+  [QAzando Shop](https://automationpratice.com.br/)
+  <img width="2554" height="915" alt="image" src="https://github.com/user-attachments/assets/afbcae09-30d6-4315-a225-91906854ffc6" />
+
+## Documentação dos testes
+
+[Feature Cadastro](https://github.com/GabrielyCamile/Cypress/blob/master/cypress/README.md)
 
  
 
