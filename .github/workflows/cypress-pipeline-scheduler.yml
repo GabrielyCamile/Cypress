@@ -1,0 +1,46 @@
+#nome da pipeline
+name: Run Basic tests
+
+#em que momento será executado (agendamento)
+on:
+  schedule:
+    - cron:'0 20 * * 1-5'
+# ┌───────────── minute (0 - 59)
+# │ ┌───────────── hour (0 - 23)
+# │ │ ┌───────────── day of the month (1 - 31)
+# │ │ │ ┌───────────── month (1 - 12 or JAN-DEC)
+# │ │ │ │ ┌───────────── day of the week (0 - 6 or SUN-SAT)
+# │ │ │ │ │
+# * * * * *   
+
+  # *siginifica sempre
+
+#o que vai ser feito nessa pipeline
+jobs:
+
+  cypress-run:
+  #maquina q será executada
+    runs-on: ubuntu-latest
+  #passo a passo para executar os testes
+    steps:
+    #clone do projeto
+    - name: Checkout/Clone do projeto
+      uses: actions/checkout@v3
+
+      #exemplo de execução no terminal
+    - name: instalar dependencias do projet
+      run: npm install
+
+    #execução e config do projeto
+    - name: Run testes
+      uses: cypress-io/github-action@v5
+      with:
+        record: true
+      env: 
+        CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+      # upload do relatório do mocha
+    - name: Upload relatório
+      uses: actions/upload-artifact@v4
+      with:
+        name: relatório
+        path: cypress/reports/html
